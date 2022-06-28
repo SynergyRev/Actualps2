@@ -1,14 +1,5 @@
 # GameGo
-Java open source e-commerce software
-
-GameGo commerce and Rest api for ecommerce
-
-- Game
-- Login
-- Products
-- Users
-- Menu
-- Service
+GameGo is a website application that offers users a hardcore gaming experience. The application makes it easy for our gamers to purchase and download the most popular games. 
 
 GameGo Ecommerce consists of the following components:
 
