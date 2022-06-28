@@ -1,5 +1,5 @@
 <h1>Games Admin</h1>
-<a class="btn btn-primary mb-3" (click)="addGame()">Add New Game</a>
+<a class="btn btn-primary mb-3" (click)="checkout()">Checkout</a>
 <div class="container row">
   <div class="col-md-6">
     <table class="table">
@@ -21,7 +21,7 @@
           <td>{{game.Description}}</td>
           <td>{{game.price}}</td>
           <td>
-            <button type="button" class="btn btn-primary">Show Details</button>
+            <button (click)="something()" type="button"  class="btn btn-primary">ADD TO CART</button>
           </td>
         </tr>
       </tbody>

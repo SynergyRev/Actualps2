@@ -15,6 +15,11 @@ export class ViewGameComponent implements OnInit {
   games!: Array<Product>;
   selectedGame!: Product;
   action!: string;
+
+  checkoutTotal = 0;
+  i = 0;
+  itemsInCart = [0];
+
   
 
   constructor(private httpClientService: HttpClientService,
@@ -53,6 +58,20 @@ export class ViewGameComponent implements OnInit {
     this.selectedGame = new Product();
     this.router.navigate(['admin', 'view-games'], { queryParams: { action: 'add' } });
   }
+
+  checkout() {
+    for ( this.i = 0; this.i< this.itemsInCart.length; this.i++){
+      this.checkoutTotal += this.itemsInCart[this.i];
+    }
+    alert(this.checkoutTotal);
+  }
+ something(){
+  alert("Item Added to cart!");
+  
+  this.itemsInCart.push(60);
+  console.log(this.itemsInCart);
+ }
+
 
 
 }
